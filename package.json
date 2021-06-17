@@ -1,0 +1,25 @@
+{
+  "name": "discord-js-bot",
+  "version": "1.0.0",
+  "description": "A typical discord bot",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rtgamingwdt/Discord.JS-Bot.git"
+  },
+  "keywords": [
+    "discord"
+  ],
+  "author": "rtgamingwdt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rtgamingwdt/Discord.JS-Bot/issues"
+  },
+  "homepage": "https://github.com/rtgamingwdt/Discord.JS-Bot#readme",
+  "dependencies": {
+    "discord.js": "^12.5.3"
+  }
+}

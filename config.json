@@ -1,3 +1,7 @@
 {
-  "token": "token"
+  "token": "token",
+  "prefix": "!",
+  "owner": {
+    "tag": "Name#0001"
+  }
 }

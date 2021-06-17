@@ -9,9 +9,9 @@ module.exports = (client, message) => {
     if(!client.commands.has(cmd)) return;
     
     try {
-		  client.commands.get(cmd).execute(client, message, args);
-	  } catch (error) {
-		  console.error(error);
-		  message.reply(`An error has occured. Please contact ${owner.tag} for assistance.`);
+    	client.commands.get(cmd).execute(client, message, args);
+    } catch (error) {
+	console.error(error);
+	message.reply(`An error has occured. Please contact ${owner.tag} for assistance.`);
     }
 }

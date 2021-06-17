@@ -11,8 +11,8 @@ const commandFolders = fs.readdirSync('./commands');
 for (const folder of commandFolders) {
     const commandFiles = fs.readdirSync(`./commands/${folder}`).filter(file => file.endsWith('.js'));
     for (const file of commandFiles) {
-        const command = require(`./commands/${folder}/${file}`);
-        client.commands.set(command.name, command);
+        const cmd = require(`./commands/${folder}/${file}`);
+        client.commands.set(cmd.name, cmd);
     }
 }
 
@@ -24,7 +24,7 @@ client.on('message', (message) => {
   if(!message.content.startsWith(prefix) || message.author.bot) return;
   const args = message.content.slice(prefix.length).trim().split(/ +/);
   const cmd = args.shift().toLowerCase();
-  if(!client.commands.has(command)) return;
+  if(!client.commands.has(cmd)) return;
   try {
 		client.commands.get(cmd).execute(client, message, args);
 	} catch (error) {

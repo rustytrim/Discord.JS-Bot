@@ -8,7 +8,7 @@ module.exports = {
 		let embed;
 		const userArgs = message.content.split(" ").slice(1);
                 const member = message.mentions.members.first() || message.guild.members.cache.get(userArgs[0]) || message.guild.members.cache.find(x => x.user.username.toLowerCase() === userArgs.slice(0).join(" ") || x.user.username === userArgs[0]);
-                let reason = args.slice(member).join(" ");
+                let reason = args.slice(1).join(" ");
 
 		if(!message.guild.me.hasPermission("KICK_MEMBERS")) {
 			embed = new MessageEmbed()

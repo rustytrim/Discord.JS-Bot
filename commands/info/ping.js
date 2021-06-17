@@ -14,7 +14,7 @@ module.exports = {
       let embed = new MessageEmbed()
       .setTitle('Ping')
       .setColor('RANDOM')
-      .setDescription(`Bot Latency: ${ping} \n API Latency: ${client.ws.ping}`)
+      .setDescription(`Bot Latency: ${ping}\nAPI Latency: ${client.ws.ping}`)
       msg.edit(embed);
     });
 	},
